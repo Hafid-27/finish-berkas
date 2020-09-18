@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"quicksand",sans-serif;
+}
+header{
+    height: 70px;
+}
+header h1{
+    display: inline-block;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+header h1 a {
+    transition: .3s;
+    color:#000000;
+    font-size: 30px;
+}
+header h1 a:hover{
+    color:#F90B00 ;
+}
+header ul{
+    float: right;
+    
+}
+header ul li{
+    padding: 24px;
+    display: inline-block;
+}
+header ul li a:hover{
+    color:#F90B00;
+}
+header ul li a {
+    transition: .3s;
+    color: #000000;
+}
+a {
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.menu {
+    float: right;
+    display: none;
+    padding: 24px;
+}
+.menu:hover{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.side{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color:rgba(252, 16, 16 , .9);
+    transition: .3s;
+}
+.side ul li a{
+    color: #fff;
+}
+.side ul li{
+    padding: 24px;
+    transition: .3s;
+    transition-property:background-color;
+}
+.side ul li:hover{
+background-color: rgba(230, 249, 0 ,.9);
+}
+#check:checked~.side{
+    left: 0;
+}
+.banner{
+    background-color:#F90B00;
+}
+section{
+    padding: 150px 0;
+    text-align: center;
+    font-size: 30px;
+}
+section h2{
+    color:#E6F900;
+}
+#sejarah p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.banner img{
+    width: 200px;
+}
+main h3{
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+main h3::before{
+    content:"";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color:#Fff;
+    left: calc(50% - 60px);
+}
+main h3::after{
+    content:"";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    height: 4px;
+    background-color:#F90B00;
+    left: calc(50% - 40px);
+}
+.colom{
+    width: 10%;
+    padding: 50px;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.colom img{
+    width: 100%;
+}
+.colom a:hover img{
+    transform: scale(1.1);
+}
+.colom figcaption{
+    color: #000000;
+}
+aside{
+    text-align: center;
+}
+aside img{
+    width: 10%;
+}
+footer{
+    padding: 20px;
+    background-color:#F90B00 ;
+    text-align: center;
+}
+.kaki p{
+    color: #fff;
+}
+@media (max-width: 768px){
+    .menu{
+        display:block;
+    }
+    header ul {
+        display: none;
+    }
+    .colom{
+        width: 25%;
+    }
+    .foto{
+        width: 25%;
+    }
+}
